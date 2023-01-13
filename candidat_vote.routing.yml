@@ -5,6 +5,15 @@ candidat_vote.example:
     _controller: '\Drupal\candidat_vote\Controller\CandidatVoteController::build'
   requirements:
     _permission: 'access content'
+    
+    
+candidat_vote.datas:
+  path: '/candidat-vote/datas'
+  defaults:
+    _title: 'Date'
+    _controller: '\Drupal\candidat_vote\Controller\CandidatVoteController::Datas'
+  requirements:
+    _permission: 'access content'    
 
 candidat_vote.settings_form:
   path: '/admin/config/system/candidat-vote'
