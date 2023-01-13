@@ -1,0 +1,66 @@
+administer candidat_vote configuration:
+  title: 'Administer candidat_vote configuration'
+  description: 'Optional description.'
+  restrict access: true
+add lots entity entities:
+  title: 'Create new Lots entity entities'
+
+administer lots entity entities:
+  title: 'Administer Lots entity entities'
+  description: 'Allow to access the administration form to configure Lots entity entities.'
+  restrict access: true
+
+delete lots entity entities:
+  title: 'Delete Lots entity entities'
+
+edit lots entity entities:
+  title: 'Edit Lots entity entities'
+
+view published lots entity entities:
+  title: 'View published Lots entity entities'
+
+view unpublished lots entity entities:
+  title: 'View unpublished Lots entity entities'
+
+view all lots entity revisions:
+  title: 'View all Lots entity revisions'
+
+revert all lots entity revisions:
+  title: 'Revert all Lots entity revisions'
+  description: 'Role requires permission <em>view Lots entity revisions</em> and <em>edit rights</em> for lots entity entities in question or <em>administer lots entity entities</em>.'
+
+delete all lots entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Lots entity revisions</em> and <em>delete rights</em> for lots entity entities in question or <em>administer lots entity entities</em>.'
+
+add candidat entity entities:
+  title: 'Create new Candidat entity entities'
+
+administer candidat entity entities:
+  title: 'Administer Candidat entity entities'
+  description: 'Allow to access the administration form to configure Candidat entity entities.'
+  restrict access: true
+
+delete candidat entity entities:
+  title: 'Delete Candidat entity entities'
+
+edit candidat entity entities:
+  title: 'Edit Candidat entity entities'
+
+view published candidat entity entities:
+  title: 'View published Candidat entity entities'
+
+view unpublished candidat entity entities:
+  title: 'View unpublished Candidat entity entities'
+
+view all candidat entity revisions:
+  title: 'View all Candidat entity revisions'
+
+revert all candidat entity revisions:
+  title: 'Revert all Candidat entity revisions'
+  description: 'Role requires permission <em>view Candidat entity revisions</em> and <em>edit rights</em> for candidat entity entities in question or <em>administer candidat entity entities</em>.'
+
+delete all candidat entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Candidat entity revisions</em> and <em>delete rights</em> for candidat entity entities in question or <em>administer candidat entity entities</em>.'
+

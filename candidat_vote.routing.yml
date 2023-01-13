@@ -1,0 +1,15 @@
+candidat_vote.example:
+  path: '/candidat-vote/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\candidat_vote\Controller\CandidatVoteController::build'
+  requirements:
+    _permission: 'access content'
+
+candidat_vote.settings_form:
+  path: '/admin/config/system/candidat-vote'
+  defaults:
+    _title: 'candidat vote settings'
+    _form: 'Drupal\candidat_vote\Form\SettingsForm'
+  requirements:
+    _permission: 'administer candidat_vote configuration'

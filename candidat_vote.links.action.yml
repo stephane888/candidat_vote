@@ -1,0 +1,10 @@
+entity.lots_entity.add_form:
+  route_name: entity.lots_entity.add_form
+  title: 'Add Lots entity'
+  appears_on:
+    - entity.lots_entity.collection
+entity.candidat_entity.add_form:
+  route_name: entity.candidat_entity.add_form
+  title: 'Add Candidat entity'
+  appears_on:
+    - entity.candidat_entity.collection

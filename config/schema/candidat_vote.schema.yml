@@ -1,0 +1,8 @@
+# Schema for the configuration files of the candidat vote module.
+candidat_vote.settings:
+  type: config_object
+  label: 'candidat vote settings'
+  mapping:
+    example:
+      type: string
+      label: 'Example'

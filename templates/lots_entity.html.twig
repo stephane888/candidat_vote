@@ -1,0 +1,22 @@
+{#
+/**
+ * @file lots_entity.html.twig
+ * Default theme implementation to present Lots entity data.
+ *
+ * This template is used when viewing Lots entity pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_lots_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('lots_entity') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

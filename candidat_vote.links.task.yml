@@ -1,0 +1,52 @@
+# Lots entity routing definition
+lots_entity.settings_tab:
+  route_name: lots_entity.settings
+  title: 'Settings'
+  base_route: lots_entity.settings
+
+entity.lots_entity.canonical:
+  route_name: entity.lots_entity.canonical
+  base_route: entity.lots_entity.canonical
+  title: 'View'
+
+entity.lots_entity.edit_form:
+  route_name: entity.lots_entity.edit_form
+  base_route: entity.lots_entity.canonical
+  title: 'Edit'
+
+entity.lots_entity.version_history:
+  route_name: entity.lots_entity.version_history
+  base_route: entity.lots_entity.canonical
+  title: 'Revisions'
+
+entity.lots_entity.delete_form:
+  route_name:  entity.lots_entity.delete_form
+  base_route:  entity.lots_entity.canonical
+  title: Delete
+  weight: 10
+# Candidat entity routing definition
+candidat_entity.settings_tab:
+  route_name: candidat_entity.settings
+  title: 'Settings'
+  base_route: candidat_entity.settings
+
+entity.candidat_entity.canonical:
+  route_name: entity.candidat_entity.canonical
+  base_route: entity.candidat_entity.canonical
+  title: 'View'
+
+entity.candidat_entity.edit_form:
+  route_name: entity.candidat_entity.edit_form
+  base_route: entity.candidat_entity.canonical
+  title: 'Edit'
+
+entity.candidat_entity.version_history:
+  route_name: entity.candidat_entity.version_history
+  base_route: entity.candidat_entity.canonical
+  title: 'Revisions'
+
+entity.candidat_entity.delete_form:
+  route_name:  entity.candidat_entity.delete_form
+  base_route:  entity.candidat_entity.canonical
+  title: Delete
+  weight: 10

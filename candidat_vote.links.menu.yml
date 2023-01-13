@@ -1,0 +1,34 @@
+candidat_vote.settings_form:
+  title: 'candidat vote'
+  description: 'Configure candidat vote.'
+  parent: system.admin_config_system
+  route_name: candidat_vote.settings_form
+  weight: 10
+
+# Lots entity menu items definition
+entity.lots_entity.collection:
+  title: 'Lots entity list'
+  route_name: entity.lots_entity.collection
+  description: 'List Lots entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+lots_entity.admin.structure.settings:
+  title: 'Lots entity settings'
+  description: 'Configure Lots entity entities'
+  route_name: lots_entity.settings
+  parent: system.admin_structure
+
+# Candidat entity menu items definition
+entity.candidat_entity.collection:
+  title: 'Candidat entity list'
+  route_name: entity.candidat_entity.collection
+  description: 'List Candidat entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+candidat_entity.admin.structure.settings:
+  title: 'Candidat entity settings'
+  description: 'Configure Candidat entity entities'
+  route_name: candidat_entity.settings
+  parent: system.admin_structure
