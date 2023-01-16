@@ -7,11 +7,30 @@ use Stephane888\DrupalUtility\HttpResponse;
 use Stephane888\Debug\ExceptionExtractMessage;
 use Symfony\Component\HttpFoundation\Request;
 use Drupal\Component\Serialization\Json;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\candidat_vote\Services\ManageCandidatApp;
 
 /**
  * Returns responses for candidat vote routes.
  */
 class CandidatVoteController extends ControllerBase {
+  /**
+   *
+   * @var \Drupal\candidat_vote\Services\ManageCandidatApp
+   */
+  protected $ManageCandidatApp;
+  
+  function __construct(ManageCandidatApp $ManageCandidatApp) {
+    $this->ManageCandidatApp = $ManageCandidatApp;
+  }
+  
+  /**
+   *
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    return new static($container->get('candidat_vote.manage_api'));
+  }
   
   /**
    * Builds the response.
@@ -49,19 +68,9 @@ class CandidatVoteController extends ControllerBase {
   
   public function Datas() {
     try {
-      $lots = [];
-      $candidats = [];
-      $entities = $this->entityTypeManager()->getStorage('lots_entity')->loadMultiple();
-      foreach ($entities as $entity) {
-        $lots[] = $entity->toArray();
-      }
-      $entities = $this->entityTypeManager()->getStorage('candidat_entity')->loadMultiple();
-      foreach ($entities as $entity) {
-        $candidats[] = $entity->toArray();
-      }
       $datas = [
-        'lots' => $lots,
-        'candidats' => $candidats
+        'lots' => $this->ManageCandidatApp->getLots(),
+        'candidats' => $this->ManageCandidatApp->getCandidats()
       ];
       return HttpResponse::response($datas);
     }

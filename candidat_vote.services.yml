@@ -1,0 +1,4 @@
+services:
+  candidat_vote.manage_api:
+    class: Drupal\candidat_vote\Services\ManageCandidatApp
+    arguments: []
