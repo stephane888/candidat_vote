@@ -59,7 +59,7 @@ class ManageCandidatApp extends ControllerBase {
 
       $this->getUrlImages($entity->get('image')->getValue(), $urls, $style);
       $candidats = [
-          'label' => $entity->get('name')->getValue(),
+          'label' => $entity->getName(),
           'logo'  => $urls[0]
       ];
     }
