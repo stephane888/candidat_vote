@@ -1,7 +1,7 @@
-candidat_vote.example:
-  path: '/candidat-vote/example'
+candidat_vote.app:
+  path: '/candidat-vote/page'
   defaults:
-    _title: 'Example'
+    _title: 'Application de vote'
     _controller: '\Drupal\candidat_vote\Controller\CandidatVoteController::build'
   requirements:
     _permission: 'access content'

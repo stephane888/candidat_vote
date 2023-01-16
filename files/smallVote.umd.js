@@ -53051,16 +53051,14 @@ var BootstrapVue = /*#__PURE__*/{
  // Default export is the BootstrapVue plugin
 
 /* harmony default export */ var esm = (BootstrapVue);
-;// CONCATENATED MODULE: ./node_modules/bootstrap-vue/dist/bootstrap-vue.css
-// extracted by mini-css-extract-plugin
-
 ;// CONCATENATED MODULE: ./src/plugins/bootstrap-vue.js
 
 
-
+//import "bootstrap/dist/css/bootstrap.min.css";
+//import "bootstrap-vue/dist/bootstrap-vue.css";
 
 external_commonjs_vue_commonjs2_vue_root_Vue_default().use(esm);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/App.vue?vue&type=template&id=56d1d9ba&
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/App.vue?vue&type=template&id=1329cba5&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
@@ -53068,12 +53066,12 @@ var render = function render() {
     attrs: {
       "id": "app"
     }
-  }, [_c('vote-form'), _c('hello-world')], 1);
+  }, [_c('vote-form')], 1);
 };
 var staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=template&id=ecb9542c&
-var VoteFormvue_type_template_id_ecb9542c_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=template&id=12e46a70&
+var VoteFormvue_type_template_id_12e46a70_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -53085,14 +53083,14 @@ var VoteFormvue_type_template_id_ecb9542c_render = function render() {
   }, [_c('b-row', {
     staticClass: "justify-content-between"
   }, [_c('b-col', {
-    staticClass: "pl-00 mb-5 pb-5 mb-lg-0 pb-lg-0",
+    staticClass: "pl-00 mb-5 pb-5 mb-lg-0 pb-lg-0 block-vote",
     attrs: {
       "md": "6"
     }
   }, [_c('div', {
     staticClass: "section-desc"
-  }, [_c('h5', {
-    staticClass: "sd-title"
+  }, [_c('h4', {
+    staticClass: "sd-title h3"
   }, [_vm._v(" Votez pour la meilleur entreprise nigériane au cameroun et tentez de gagnez de nombreux lots ")]), _c('div', {
     staticClass: "list-lots"
   }, [_c('lots-slider')], 1)])]), _c('b-col', {
@@ -53102,7 +53100,7 @@ var VoteFormvue_type_template_id_ecb9542c_render = function render() {
     }
   }, [_c('process-vote')], 1)], 1)], 1)]);
 };
-var VoteFormvue_type_template_id_ecb9542c_staticRenderFns = [];
+var VoteFormvue_type_template_id_12e46a70_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/LotsSlider.vue?vue&type=template&id=2c1c570c&
 var LotsSlidervue_type_template_id_2c1c570c_render = function render() {
@@ -53218,8 +53216,8 @@ var component = (0,componentNormalizer/* default */.Z)(
 )
 
 /* harmony default export */ var LotsSlider = (component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=template&id=081e8b8f&
-var ProcessVotevue_type_template_id_081e8b8f_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=template&id=9e0d3154&
+var ProcessVotevue_type_template_id_9e0d3154_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -53321,7 +53319,7 @@ var ProcessVotevue_type_template_id_081e8b8f_render = function render() {
     staticClass: "align-middle spinner-centered text-light"
   })], 1)])], 1);
 };
-var ProcessVotevue_type_template_id_081e8b8f_staticRenderFns = [];
+var ProcessVotevue_type_template_id_9e0d3154_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=template&id=473f577c&
 var LoginRegistervue_type_template_id_473f577c_render = function render() {
@@ -63273,10 +63271,10 @@ var LoginRegister_component = (0,componentNormalizer/* default */.Z)(
 });
 ;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_ProcessVotevue_type_script_lang_js_ = (ProcessVotevue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=style&index=0&id=081e8b8f&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=style&index=0&id=9e0d3154&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=style&index=0&id=081e8b8f&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=style&index=0&id=9e0d3154&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./src/components/ProcessVote.vue
 
@@ -63289,8 +63287,8 @@ var LoginRegister_component = (0,componentNormalizer/* default */.Z)(
 
 var ProcessVote_component = (0,componentNormalizer/* default */.Z)(
   components_ProcessVotevue_type_script_lang_js_,
-  ProcessVotevue_type_template_id_081e8b8f_render,
-  ProcessVotevue_type_template_id_081e8b8f_staticRenderFns,
+  ProcessVotevue_type_template_id_9e0d3154_render,
+  ProcessVotevue_type_template_id_9e0d3154_staticRenderFns,
   false,
   null,
   null,
@@ -63314,10 +63312,10 @@ var ProcessVote_component = (0,componentNormalizer/* default */.Z)(
 });
 ;// CONCATENATED MODULE: ./src/components/VoteForm.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_VoteFormvue_type_script_lang_js_ = (VoteFormvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=style&index=0&id=ecb9542c&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=style&index=0&id=12e46a70&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/VoteForm.vue?vue&type=style&index=0&id=ecb9542c&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/VoteForm.vue?vue&type=style&index=0&id=12e46a70&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./src/components/VoteForm.vue
 
@@ -63330,8 +63328,8 @@ var ProcessVote_component = (0,componentNormalizer/* default */.Z)(
 
 var VoteForm_component = (0,componentNormalizer/* default */.Z)(
   components_VoteFormvue_type_script_lang_js_,
-  VoteFormvue_type_template_id_ecb9542c_render,
-  VoteFormvue_type_template_id_ecb9542c_staticRenderFns,
+  VoteFormvue_type_template_id_12e46a70_render,
+  VoteFormvue_type_template_id_12e46a70_staticRenderFns,
   false,
   null,
   null,
@@ -63340,77 +63338,24 @@ var VoteForm_component = (0,componentNormalizer/* default */.Z)(
 )
 
 /* harmony default export */ var VoteForm = (VoteForm_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/HelloWorld.vue?vue&type=template&id=1eae43f5&scoped=true&
-var HelloWorldvue_type_template_id_1eae43f5_scoped_true_render = function render() {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c('div', {
-    staticClass: "hello"
-  }, [_c('h1', [_vm._v(_vm._s(_vm.msg) + " scoped\" attribute to limit CSS to this component only")])]);
-};
-var HelloWorldvue_type_template_id_1eae43f5_scoped_true_staticRenderFns = [];
-
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/HelloWorld.vue?vue&type=script&lang=js&
-/* harmony default export */ var HelloWorldvue_type_script_lang_js_ = ({
-  name: "HelloWorld",
-  props: {
-    msg: String
-  }
-});
-;// CONCATENATED MODULE: ./src/components/HelloWorld.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_HelloWorldvue_type_script_lang_js_ = (HelloWorldvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/HelloWorld.vue?vue&type=style&index=0&id=1eae43f5&prod&scoped=true&lang=scss&
-// extracted by mini-css-extract-plugin
-
-;// CONCATENATED MODULE: ./src/components/HelloWorld.vue?vue&type=style&index=0&id=1eae43f5&prod&scoped=true&lang=scss&
-
-;// CONCATENATED MODULE: ./src/components/HelloWorld.vue
-
-
-
-;
-
-
-/* normalize component */
-
-var HelloWorld_component = (0,componentNormalizer/* default */.Z)(
-  components_HelloWorldvue_type_script_lang_js_,
-  HelloWorldvue_type_template_id_1eae43f5_scoped_true_render,
-  HelloWorldvue_type_template_id_1eae43f5_scoped_true_staticRenderFns,
-  false,
-  null,
-  "1eae43f5",
-  null
-  
-)
-
-/* harmony default export */ var HelloWorld = (HelloWorld_component.exports);
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/App.vue?vue&type=script&lang=js&
-
 
 /* harmony default export */ var Appvue_type_script_lang_js_ = ({
   name: "App",
   components: {
-    VoteForm: VoteForm,
-    HelloWorld: HelloWorld
+    VoteForm: VoteForm
   }
 });
 ;// CONCATENATED MODULE: ./src/App.vue?vue&type=script&lang=js&
  /* harmony default export */ var src_Appvue_type_script_lang_js_ = (Appvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/App.vue?vue&type=style&index=0&id=56d1d9ba&prod&lang=scss&
-// extracted by mini-css-extract-plugin
-
-;// CONCATENATED MODULE: ./src/App.vue?vue&type=style&index=0&id=56d1d9ba&prod&lang=scss&
-
 ;// CONCATENATED MODULE: ./src/App.vue
 
 
 
-;
 
 
 /* normalize component */
-
+;
 var App_component = (0,componentNormalizer/* default */.Z)(
   src_Appvue_type_script_lang_js_,
   render,

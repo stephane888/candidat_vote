@@ -18,10 +18,17 @@ class CandidatVoteController extends ControllerBase {
    */
   public function build() {
     $build['content'] = [
-      '#type' => 'item',
-      '#markup' => $this->t('It works!')
+      '#type' => 'html_tag',
+      '#tag' => 'section',
+      "#attributes" => [
+        'id' => 'app',
+        'class' => [
+          'm-5',
+          'p-5'
+        ]
+      ]
     ];
-    
+    $build['content']['#attached']['library'][] = 'candidat_vote/candidat_vote_app';
     return $build;
   }
   
