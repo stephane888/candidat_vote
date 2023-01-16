@@ -235,7 +235,7 @@ class LotsEntity extends EditorialContentEntityBase implements LotsEntityInterfa
     ])->setDisplayConfigurable('form', TRUE)->setDisplayConfigurable('view', TRUE)->setRequired(TRUE);
     
     //
-    $fields['lot_images'] = BaseFieldDefinition::create('image')->setLabel('Lot images')->setDisplayConfigurable('form', TRUE)->setDisplayConfigurable('view', TRUE)->setRequired(TRUE)->setCardinality(-1);
+    $fields['lot_images'] = BaseFieldDefinition::create('image')->setLabel('Lot images')->setDisplayConfigurable('form', TRUE)->setDisplayConfigurable('view', TRUE)->setRequired(TRUE)->setCardinality(-1)->setSetting("file_extensions", "png gif jpg jpeg webp");
     
     $fields['status']->setDescription(t('A boolean indicating whether the Lots entity is published.'))->setDisplayOptions('form', [
       'type' => 'boolean_checkbox',
