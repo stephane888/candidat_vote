@@ -70,8 +70,8 @@ class CandidatVoteController extends ControllerBase {
     try {
       $datas = [
         'lots_title' => $this->ManageCandidatApp->getTitleLots(),
-        'lots' => $this->ManageCandidatApp->getLots(),
         'candidats_title' => $this->ManageCandidatApp->getTitleCandidats(),
+        'lots' => $this->ManageCandidatApp->getLots(),
         'candidats' => $this->ManageCandidatApp->getCandidats()
       ];
       return HttpResponse::response($datas);
