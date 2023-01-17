@@ -50,40 +50,43 @@ class ManageCandidatApp extends ControllerBase {
     $entities = $this->entityTypeManager()->getStorage('candidat_entity')->loadMultiple();
     
     /**
+     *
      * @var \Drupal\candidat_vote\Entity\LotsEntity $entity
      */
     foreach ($entities as $entity) {
-      $urls =[];
+      $urls = [];
       
-      // $this->getUrlImages() 
-
+      // $this->getUrlImages()
+      
       $this->getUrlImages($entity->get('image')->getValue(), $urls, $style);
-      $candidats = [
-          'label' => $entity->getName(),
-          'logo'  => $urls[0]
+      $candidats[] = [
+        'label' => $entity->getName(),
+        'logo' => $urls[0]
       ];
     }
     return $candidats;
   }
   
   /**
+   *
    * @return string
    */
-  public function getTitleCandidats(){
+  public function getTitleCandidats() {
     $configs = $this->config('candidat_vote.settings')->getRawData();
-    $title = $configs['candidat_vote_title'] ? $configs['candidat_vote_title'] : 'Quel est la meilleur entreprise nigériane au cameroun ?';
+    $title = isset($configs['candidat_vote_title']) ? $configs['candidat_vote_title'] : 'Quel est la meilleur entreprise nigériane au cameroun ?';
     return $title;
   }
-
+  
   /**
+   *
    * @return string
    */
-  public function getTitleLots(){
+  public function getTitleLots() {
     $configs = $this->config('candidat_vote.settings')->getRawData();
-    $title = $configs['lots_title'] ? $configs['lots_title'] : 'Votez pour la meilleur entreprise nigériane au cameroun et tentez de gagnez de nombreux lots';
+    $title = isset($configs['lots_title']) ? $configs['lots_title'] : "Votez pour la meilleur entreprise nigériane au cameroun et tentez de gagnez de nombreux lots";
     return $title;
   }
-
+  
   /**
    *
    * @param array $fids
