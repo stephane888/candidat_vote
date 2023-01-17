@@ -17,7 +17,7 @@ class ManageCandidatApp extends ControllerBase {
    */
   public function getLots() {
     $configs = $this->config('candidat_vote.settings')->getRawData();
-    $style = $configs['style_image'] ? $configs['style_image'] : 'large';
+    $style = $configs['style_image_lot'] ? $configs['style_image_lot'] : 'large';
     $lots = [];
     // Recuperation des lots.
     $entities = $this->entityTypeManager()->getStorage('lots_entity')->loadMultiple();
@@ -46,7 +46,7 @@ class ManageCandidatApp extends ControllerBase {
   public function getCandidats() {
     $candidats = [];
     $configs = $this->config('candidat_vote.settings')->getRawData();
-    $style = $configs['style_image'] ? $configs['style_image'] : 'medium';
+    $style = $configs['style_image_candidat'] ? $configs['style_image_candidat'] : 'moyen';
     $entities = $this->entityTypeManager()->getStorage('candidat_entity')->loadMultiple();
     
     /**
