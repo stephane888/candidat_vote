@@ -43,7 +43,13 @@ class SettingsForm extends ConfigFormBase {
     }
     $form['style_image_candidat'] = [
       '#type' => 'select',
-      '#title' => $this->t('Style d\'image'),
+      '#title' => $this->t('Style d\'image pour les candidats'),
+      '#options' => $styles_images,
+      '#default_value' => $this->config('candidat_vote.settings')->get('style_image')
+    ];
+    $form['style_image_lot'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Style d\'image pour les lots'),
       '#options' => $styles_images,
       '#default_value' => $this->config('candidat_vote.settings')->get('style_image')
     ];
