@@ -51,10 +51,21 @@ class CandidatVoteController extends ControllerBase {
     return $build;
   }
   
-  public function getVote(Request $request) {
+  /**
+   * Permet d'appliquer le vote d'un utilisateur.
+   *
+   * @param Request $request
+   * @return \Symfony\Component\HttpFoundation\JsonResponse
+   */
+  public function setVote(Request $request) {
     try {
       if (\Drupal::currentUser()->id()) {
+        /**
+         *
+         * @var array $vote
+         */
         $vote = Json::decode($request->getContent());
+        $datas = $this->ManageCandidatApp->setVotes($vote);
         return HttpResponse::response($datas);
       }
       throw \Exception("Vous n'etes pas connecté(e)");

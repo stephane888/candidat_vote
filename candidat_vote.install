@@ -1,0 +1,50 @@
+<?php
+
+/**
+ *
+ * @file
+ * Install, update and uninstall functions for the votings_renders module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function candidat_vote_install() {
+  $reactions = _candidat_vote_get_reactions();
+  $voteTypeStorage = \Drupal::service('entity_type.manager')->getStorage('vote_type');
+  
+  // Create reactions.
+  $voteTypes = $voteTypeStorage->loadMultiple($voteTypeStorage->getQuery()->condition('id', array_keys($reactions), 'IN')->execute());
+  foreach ($reactions as $key => $label) {
+    \Drupal::messenger()->addStatus(' Creation of entity type : ' . $label);
+    $voteType = empty($voteTypes[$key]) ? $voteTypeStorage->create([
+      'id' => $key,
+      'label' => $label,
+      'value_type' => 'points',
+      'description' => 'Automatically created reaction'
+    ]) : $voteTypes[$key];
+    $voteType->save();
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function candidat_vote_uninstall() {
+  $reactions = _candidat_vote_get_reactions();
+  $voteTypeStorage = \Drupal::service('entity_type.manager')->getStorage('vote_type');
+  // Remove reactions.
+  $voteTypes = $voteTypeStorage->loadMultiple($voteTypeStorage->getQuery()->condition('id', array_keys($reactions), 'IN')->execute());
+  foreach ($voteTypes as $voteType) {
+    $voteType->delete();
+  }
+}
+
+/**
+ * Helper function to return default reactions.
+ */
+function _candidat_vote_get_reactions() {
+  return [
+    "candidat_vote_app" => "Vote module candidat_vote"
+  ];
+}
