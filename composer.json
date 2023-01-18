@@ -9,5 +9,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+    	"drupal/votingapi": "^3.0@beta"
+    }
 }

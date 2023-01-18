@@ -5,6 +5,7 @@ namespace Drupal\candidat_vote\Services;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Session\AccountProxy;
 use Drupal\votingapi\Entity\Vote;
+use Drupal\votingapi\VoteResultFunctionManager;
 
 /**
  *
@@ -20,18 +21,48 @@ class ManageCandidatApp extends ControllerBase {
   
   /**
    *
+   * @var integer
+   */
+  protected $totalVote = 0;
+  
+  /**
+   *
    * @var array
    */
   protected $config = [];
   
-  function __construct(AccountProxy $current_user) {
+  /**
+   *
+   * @var \Drupal\votingapi\VoteResultFunctionManager
+   */
+  protected $VoteResultFunctionManager;
+  /**
+   * Ce entité doit etre creer dans config/install voir le module test de
+   * votingAPI.
+   *
+   * @var string
+   */
+  private $typeDeVote = 'votings_renders_note';
+  
+  /**
+   *
+   * @param AccountProxy $current_user
+   * @param VoteResultFunctionManager $VoteResultFunctionManager
+   */
+  function __construct(AccountProxy $current_user, VoteResultFunctionManager $VoteResultFunctionManager) {
     $this->current_user = $current_user;
+    $this->VoteResultFunctionManager = $VoteResultFunctionManager;
   }
   
   /**
    * Contient l'id de l'entite et la note.
    *
    * @param array $vote
+   * @param boolean $multipleVote
+   *        Permet de voter une seule pour une campagne s'il est à false et
+   *        plusieurs s'il est a true.
+   * @throws \Exception
+   * @return Array|number
    */
   public function setVotes(array $vote, $multipleVote = false) {
     $this->validVote($vote);
@@ -40,17 +71,19 @@ class ManageCandidatApp extends ControllerBase {
       // Recuperation du candidat.
       $candidat = $this->entityTypeManager()->getStorage('candidat_entity')->load($vote['entity_id']);
       $query = $this->entityTypeManager()->getStorage('vote')->getQuery();
-      $query->condition('type', 'votings_renders_note');
+      $query->condition('type', $this->typeDeVote);
       $query->condition('user_id', $user_id);
-      $query->condition('entity_id', $candidat->id());
+      if ($multipleVote)
+        $query->condition('entity_id', $candidat->id());
       $query->condition('entity_type', $candidat->getEntityTypeId());
       $ids = $query->execute();
       if (!empty(($ids))) {
         $votes = \Drupal::entityTypeManager()->getStorage('vote')->loadMultiple($ids);
-        return reset($votes);
+        $vote = reset($votes);
+        return $vote->toArray();
       }
       $vote = Vote::create([
-        'type' => 'votings_renders_note',
+        'type' => $this->typeDeVote,
         'entity_id' => $candidat->id(),
         'entity_type' => $candidat->getEntityTypeId(),
         'value_type' => 'option',
@@ -59,6 +92,25 @@ class ManageCandidatApp extends ControllerBase {
       return $vote->save();
     }
     throw new \Exception("You must be logged in to be able to");
+  }
+  
+  public function userHasVoted() {
+    $query = $this->entityTypeManager()->getStorage('vote')->getQuery();
+    $query->condition('type', $this->typeDeVote);
+    $query->condition('user_id', $this->current_user->id());
+    $ids = $query->execute();
+    if (!empty($ids)) {
+      /**
+       *
+       * @var \Drupal\votingapi\Entity\Vote $vote
+       */
+      $vote = \Drupal::entityTypeManager()->getStorage('vote')->load(reset($ids));
+      $candidat = $this->entityTypeManager()->getStorage('candidat_entity')->load($vote->getVotedEntityId());
+      return [
+        'title' => $candidat->label()
+      ];
+    }
+    return false;
   }
   
   protected function validVote(array $vote) {
@@ -88,6 +140,7 @@ class ManageCandidatApp extends ControllerBase {
       $this->getUrlImages($entity->get('lot_images')->getValue(), $images, $style);
       foreach ($images as $url) {
         $lots[] = [
+          'entity_id' => $entity->id(),
           'text' => $entity->label(),
           'image' => $url
         ];
@@ -113,12 +166,50 @@ class ManageCandidatApp extends ControllerBase {
     foreach ($entities as $entity) {
       $urls = [];
       
-      // $this->getUrlImages()
-      
+      // $this->getUrlImages();
       $this->getUrlImages($entity->get('image')->getValue(), $urls, $style);
+      $voteResults = $this->VoteResultFunctionManager->getResults($entity->getEntityTypeId(), $entity->id());
+      if (!empty($voteResults[$this->typeDeVote]))
+        $voteResults = $voteResults[$this->typeDeVote];
+      //
+      $vote_average = 0;
+      if (isset($voteResults['vote_average']))
+        $vote_average = $voteResults['vote_average'];
+      //
+      $vote_count = 0;
+      if (isset($voteResults['vote_count']))
+        $vote_count = $voteResults['vote_count'];
+      //
+      $vote_sum = 0;
+      if (isset($voteResults['vote_sum']))
+        $vote_sum = $voteResults['vote_sum'];
+      // le client souhaite faire une tricherie pour le marketing.
+      switch ($entity->id()) {
+        case 1:
+          $vote_count += 300;
+          break;
+        case 2:
+          $vote_count += 5;
+          break;
+        case 3:
+          $vote_count += 27;
+          break;
+        case 4:
+          $vote_count += 112;
+          break;
+        case 5:
+          $vote_count += 8;
+          break;
+      }
       $candidats[] = [
+        'entity_id' => $entity->id(),
         'label' => $entity->getName(),
-        'logo' => $urls[0]
+        'logo' => $urls[0],
+        'total_votes' => $vote_count,
+        'vote_sum' => $vote_sum,
+        'vote_average' => $vote_average
+        // 'getEntityTypeId' => $entity->getEntityTypeId(),
+        // 'voteResults' => $voteResults
       ];
     }
     return $candidats;

@@ -65,6 +65,7 @@ class CandidatVoteController extends ControllerBase {
          * @var array $vote
          */
         $vote = Json::decode($request->getContent());
+        $vote['note'] = 1;
         $datas = $this->ManageCandidatApp->setVotes($vote);
         return HttpResponse::response($datas);
       }
@@ -83,7 +84,8 @@ class CandidatVoteController extends ControllerBase {
         'lots_title' => $this->ManageCandidatApp->getTitleLots(),
         'candidats_title' => $this->ManageCandidatApp->getTitleCandidats(),
         'lots' => $this->ManageCandidatApp->getLots(),
-        'candidats' => $this->ManageCandidatApp->getCandidats()
+        'candidats' => $this->ManageCandidatApp->getCandidats(),
+        'user_has_voted' => $this->ManageCandidatApp->userHasVoted()
       ];
       return HttpResponse::response($datas);
     }
