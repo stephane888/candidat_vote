@@ -54430,8 +54430,8 @@ var ProcessVotevue_type_template_id_50b075fb_render = function render() {
 };
 var ProcessVotevue_type_template_id_50b075fb_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=template&id=9203dc14&
-var LoginRegistervue_type_template_id_9203dc14_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=template&id=2e408796&
+var LoginRegistervue_type_template_id_2e408796_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('ValidationObserver', {
@@ -54440,7 +54440,10 @@ var LoginRegistervue_type_template_id_9203dc14_render = function render() {
       "tag": "form"
     }
   }, [_c('div', {
-    staticClass: "login-page"
+    staticClass: "login-page",
+    attrs: {
+      "facebook_app_is_define": _vm.facebook_app_is_define
+    }
   }, [_vm.alertDisplay ? _c('div', {
     staticClass: "alert w-100",
     class: _vm.alertType,
@@ -54476,7 +54479,8 @@ var LoginRegistervue_type_template_id_9203dc14_render = function render() {
       "model-register-form": _vm.modelRegisterForm,
       "show-password": _vm.showPassword,
       "action-after-register": _vm.actionAfterRegister,
-      "show-modal-success": _vm.showModalSuccess
+      "show-modal-success": _vm.showModalSuccess,
+      "configs_login_rx_vuejs": _vm.configs_login_rx_vuejs
     },
     on: {
       "select-stepe": _vm.selectStepe
@@ -54484,20 +54488,14 @@ var LoginRegistervue_type_template_id_9203dc14_render = function render() {
   })], 1)])], 1), _c('div', {
     staticClass: "politik-secur mx-auto text-center"
   }, [_vm._t("condition_utilisation", function () {
-    return [_c('p', {
-      staticClass: "text-white"
-    }, [_vm._v(" En vous inscrivant, vous acceptez nos "), _c('a', {
-      attrs: {
-        "href": "#"
+    return [_vm.configs_login_rx_vuejs.texts && _vm.configs_login_rx_vuejs.texts.condition_utilisation ? _c('div', {
+      domProps: {
+        "innerHTML": _vm._s(_vm.configs_login_rx_vuejs.texts.condition_utilisation.value)
       }
-    }, [_vm._v(" Conditions d'utilisation ")]), _vm._v(" , de recevoir des emails et des MAJ de LESROISDELARENO et vous reconnaissez avoir lu notre "), _c('a', {
-      attrs: {
-        "href": "#"
-      }
-    }, [_vm._v(" Politique de confidentialité")])])];
+    }) : _vm._e()];
   })], 2)]);
 };
-var LoginRegistervue_type_template_id_9203dc14_staticRenderFns = [];
+var LoginRegistervue_type_template_id_2e408796_staticRenderFns = [];
 
 // EXTERNAL MODULE: ../drupal-vuejs/node_modules/core-js/modules/es.array.push.js
 var modules_es_array_push = __webpack_require__(5251);
@@ -61782,7 +61780,7 @@ const config_vm = new (external_commonjs_vue_commonjs2_vue_root_Vue_default())()
     return h("div", {}, [text]);
   },
   /**
-   * essaie de connecter l'utilisateur
+   * Essaie de connecter l'utilisateur
    * @param {*} form
    */
   connexionUser(form, actionAfterLogin) {
@@ -61791,9 +61789,9 @@ const config_vm = new (external_commonjs_vue_commonjs2_vue_root_Vue_default())()
       App_utilities.post(url, form).then(resp => {
         this.AfterRedirect(actionAfterLogin, null, resp);
         resolv(resp);
+      }).catch(er => {
+        reject(er);
       });
-    }).catch(er => {
-      reject(er);
     });
   }
 });
@@ -61998,19 +61996,20 @@ var CheckStatusvue_type_template_id_1a0a7d5c_render = function render() {
 };
 var CheckStatusvue_type_template_id_1a0a7d5c_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=template&id=af811f18&
-var LoginGooglevue_type_template_id_af811f18_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=template&id=6e485394&
+var LoginGooglevue_type_template_id_6e485394_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
     staticClass: "buttton-google-aouth",
     class: _vm.classRender,
     attrs: {
-      "id": _vm.idHtmlrender
+      "id": _vm.idHtmlrender,
+      "client_google_is_define": _vm.client_google_is_define
     }
   });
 };
-var LoginGooglevue_type_template_id_af811f18_staticRenderFns = [];
+var LoginGooglevue_type_template_id_6e485394_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/rx/google.js
 //const gapi = window.gapi;
@@ -62019,151 +62018,6 @@ var LoginGooglevue_type_template_id_af811f18_staticRenderFns = [];
   //contient les informations renvoyés par google apres approbations.
   client_id: "513247959752-qapd9jb30pdtoh51m0h53070a2v8c4er.apps.googleusercontent.com"
 });
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=script&lang=js&
-function loadScript(src) {
-  return new Promise(resolv => {
-    var s = document.createElement("script");
-    s.setAttribute("src", src);
-    s.onload = function () {
-      console.log(" Chargement du script ok : ", src);
-      resolv(true);
-    };
-    document.head.appendChild(s);
-  });
-}
-
-
-
-/* harmony default export */ var LoginGooglevue_type_script_lang_js_ = ({
-  name: "LoginGoogle",
-  props: {
-    idHtml: {
-      type: String,
-      required: true
-    },
-    returnUidInfo: {
-      type: Boolean,
-      default: false
-    },
-    classRender: {
-      type: Array,
-      default: function () {
-        return ["mx-auto"];
-      }
-    },
-    actionAfterLogin: {
-      type: String,
-      default: "default"
-    }
-  },
-  computed: {
-    idHtmlrender() {
-      return "google-login-tab" + this.idHtml;
-    }
-  },
-  mounted() {
-    if (!window.google) {
-      loadScript("https://accounts.google.com/gsi/client").then(() => {
-        this.getUserInfoFromFrame();
-      });
-    } else {
-      this.getUserInfoFromFrame();
-    }
-  },
-  methods: {
-    getUserInfoFromFrame() {
-      var self = this;
-      function handleCredentialResponse(response) {
-        console.log("Encoded JWT ID token: ", response);
-        google.userAccess = {
-          ...response,
-          client_id: response.clientId
-        };
-        self.TryToLoginWithGoogle();
-        window.rxGoogle = google;
-      }
-      console.log(" window.onload ! ", window.onload);
-      const goo = () => {
-        window.google.accounts.id.initialize({
-          client_id: google.client_id,
-          callback: handleCredentialResponse
-        });
-        window.google.accounts.id.renderButton(document.getElementById(self.idHtmlrender), {
-          theme: "outline",
-          size: "large"
-        } // customization attributes
-        );
-
-        window.google.accounts.id.prompt(); // also display the One Tap dialog
-      };
-
-      goo();
-    },
-    /**
-     * Ecoute un evenement afin de determiner si l'utilisateur a clique sur le bonton de connexion et que le processus soit terminé.
-     */
-    TryToLoginWithGoogle() {
-      // this.IsBusy();
-      // this.getFields();
-      return new Promise((resolv, reject) => {
-        App_utilities.post("/login-rx-vuejs/google-check", google.userAccess).then(resp => {
-          this.isBusy = false;
-          this.alertDisplay = true;
-          this.alertType = "alert-success";
-          this.alertText = "Connexion réussie";
-          this.$emit("ev_logingoogle", resp.data);
-          // Si on souhaite juste obtenir les infos concernant l'utilisateur.
-          if (this.returnUidInfo) {
-            resolv(resp);
-            return;
-          }
-          config_for_all.AfterRedirect(this.actionAfterLogin, null, resp);
-          resolv(resp);
-        }).catch(errors => {
-          this.isBusy = false;
-          this.alertDisplay = true;
-          this.alertType = "alert-danger";
-          this.alertText = "Google : Erreur de connexion";
-          if (errors.error && errors.error.statusText && errors.error.statusText != "") {
-            this.alertText = errors.error.statusText;
-          }
-          console.log(" Error ajax ", errors.error);
-          console.log(" Error ajax ", errors.code);
-          console.log(" Error ajax ", errors.stack);
-          reject(errors);
-        });
-      });
-    }
-  }
-});
-;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_LoginGooglevue_type_script_lang_js_ = (LoginGooglevue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=af811f18&prod&lang=scss&
-// extracted by mini-css-extract-plugin
-
-;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=af811f18&prod&lang=scss&
-
-;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue
-
-
-
-;
-
-
-/* normalize component */
-
-var LoginGoogle_component = (0,componentNormalizer/* default */.Z)(
-  components_LoginGooglevue_type_script_lang_js_,
-  LoginGooglevue_type_template_id_af811f18_render,
-  LoginGooglevue_type_template_id_af811f18_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ var LoginGoogle = (LoginGoogle_component.exports);
 // EXTERNAL MODULE: ../drupal-vuejs/node_modules/core-js/modules/es.array.unshift.js
 var modules_es_array_unshift = __webpack_require__(6446);
 ;// CONCATENATED MODULE: ../drupal-vuejs/node_modules/vuex/dist/vuex.esm.js
@@ -63278,6 +63132,159 @@ var vuex_esm_index = {
 };
 /* harmony default export */ var dist_vuex_esm = ((/* unused pure expression or super */ null && (vuex_esm_index)));
 
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=script&lang=js&
+function loadScript(src) {
+  return new Promise(resolv => {
+    var s = document.createElement("script");
+    s.setAttribute("src", src);
+    s.onload = function () {
+      console.log(" Chargement du script ok : ", src);
+      resolv(true);
+    };
+    document.head.appendChild(s);
+  });
+}
+
+
+
+
+/* harmony default export */ var LoginGooglevue_type_script_lang_js_ = ({
+  name: "LoginGoogle",
+  props: {
+    idHtml: {
+      type: String,
+      required: true
+    },
+    returnUidInfo: {
+      type: Boolean,
+      default: false
+    },
+    classRender: {
+      type: Array,
+      default: function () {
+        return ["mx-auto"];
+      }
+    },
+    actionAfterLogin: {
+      type: String,
+      default: "default"
+    }
+  },
+  computed: {
+    ...vuex_esm_mapState(["configs_login_rx_vuejs"]),
+    idHtmlrender() {
+      return "google-login-tab" + this.idHtml;
+    },
+    client_google_is_define() {
+      if (this.configs_login_rx_vuejs && this.configs_login_rx_vuejs.client_google_id) {
+        this.initGoogle();
+        return true;
+      } else return "";
+    }
+  },
+  methods: {
+    initGoogle() {
+      if (!window.google) {
+        loadScript("https://accounts.google.com/gsi/client").then(() => {
+          this.getUserInfoFromFrame();
+        });
+      } else {
+        this.getUserInfoFromFrame();
+      }
+    },
+    getUserInfoFromFrame() {
+      var self = this;
+      function handleCredentialResponse(response) {
+        console.log("Encoded JWT ID token: ", response);
+        google.userAccess = {
+          ...response,
+          client_id: response.clientId
+        };
+        self.TryToLoginWithGoogle();
+        window.rxGoogle = google;
+      }
+      console.log(" window.onload ! ", window.onload);
+      const goo = () => {
+        window.google.accounts.id.initialize({
+          client_id: this.configs_login_rx_vuejs.client_google_id,
+          callback: handleCredentialResponse
+        });
+        window.google.accounts.id.renderButton(document.getElementById(self.idHtmlrender), {
+          theme: "outline",
+          size: "large"
+        } // customization attributes
+        );
+
+        window.google.accounts.id.prompt(); // also display the One Tap dialog
+      };
+
+      goo();
+    },
+    /**
+     * Ecoute un evenement afin de determiner si l'utilisateur a clique sur le bonton de connexion et que le processus soit terminé.
+     */
+    TryToLoginWithGoogle() {
+      // this.IsBusy();
+      // this.getFields();
+      return new Promise((resolv, reject) => {
+        App_utilities.post("/login-rx-vuejs/google-check", google.userAccess).then(resp => {
+          this.isBusy = false;
+          this.alertDisplay = true;
+          this.alertType = "alert-success";
+          this.alertText = "Connexion réussie";
+          this.$emit("ev_logingoogle", resp.data);
+          // Si on souhaite juste obtenir les infos concernant l'utilisateur.
+          if (this.returnUidInfo) {
+            resolv(resp);
+            return;
+          }
+          config_for_all.AfterRedirect(this.actionAfterLogin, null, resp);
+          resolv(resp);
+        }).catch(errors => {
+          this.isBusy = false;
+          this.alertDisplay = true;
+          this.alertType = "alert-danger";
+          this.alertText = "Google : Erreur de connexion";
+          if (errors.error && errors.error.statusText && errors.error.statusText != "") {
+            this.alertText = errors.error.statusText;
+          }
+          console.log(" Error ajax ", errors.error);
+          console.log(" Error ajax ", errors.code);
+          console.log(" Error ajax ", errors.stack);
+          reject(errors);
+        });
+      });
+    }
+  }
+});
+;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_LoginGooglevue_type_script_lang_js_ = (LoginGooglevue_type_script_lang_js_); 
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=6e485394&prod&lang=scss&
+// extracted by mini-css-extract-plugin
+
+;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=6e485394&prod&lang=scss&
+
+;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue
+
+
+
+;
+
+
+/* normalize component */
+
+var LoginGoogle_component = (0,componentNormalizer/* default */.Z)(
+  components_LoginGooglevue_type_script_lang_js_,
+  LoginGooglevue_type_template_id_6e485394_render,
+  LoginGooglevue_type_template_id_6e485394_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var LoginGoogle = (LoginGoogle_component.exports);
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/CheckStatus.vue?vue&type=script&lang=js&
 
 
@@ -63355,8 +63362,8 @@ var CheckStatus_component = (0,componentNormalizer/* default */.Z)(
 )
 
 /* harmony default export */ var CheckStatus = (CheckStatus_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/SetPassword.vue?vue&type=template&id=7f325da2&
-var SetPasswordvue_type_template_id_7f325da2_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/SetPassword.vue?vue&type=template&id=ab2c4b2c&
+var SetPasswordvue_type_template_id_ab2c4b2c_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -63441,7 +63448,7 @@ var SetPasswordvue_type_template_id_7f325da2_render = function render() {
     }
   }, [_vm._v(" Retour ")])]);
 };
-var SetPasswordvue_type_template_id_7f325da2_staticRenderFns = [];
+var SetPasswordvue_type_template_id_ab2c4b2c_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/SetPassword.vue?vue&type=script&lang=js&
 
@@ -63489,6 +63496,7 @@ var SetPasswordvue_type_template_id_7f325da2_staticRenderFns = [];
         if (test) components_config.connexionUser(this.form, this.actionAfterLogin).then(() => {
           this.waiting = "";
         }).catch(e => {
+          console.log("Login : ", e);
           this.$refs.refPass.setErrors([e.error.statusText]);
           this.waiting = "error";
         });else this.waiting = "";
@@ -63508,8 +63516,8 @@ var SetPasswordvue_type_template_id_7f325da2_staticRenderFns = [];
 ;
 var SetPassword_component = (0,componentNormalizer/* default */.Z)(
   components_SetPasswordvue_type_script_lang_js_,
-  SetPasswordvue_type_template_id_7f325da2_render,
-  SetPasswordvue_type_template_id_7f325da2_staticRenderFns,
+  SetPasswordvue_type_template_id_ab2c4b2c_render,
+  SetPasswordvue_type_template_id_ab2c4b2c_staticRenderFns,
   false,
   null,
   null,
@@ -63518,8 +63526,8 @@ var SetPassword_component = (0,componentNormalizer/* default */.Z)(
 )
 
 /* harmony default export */ var SetPassword = (SetPassword_component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/RegisTer.vue?vue&type=template&id=2f7ab9b8&
-var RegisTervue_type_template_id_2f7ab9b8_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/RegisTer.vue?vue&type=template&id=f644ecb2&
+var RegisTervue_type_template_id_f644ecb2_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -63534,7 +63542,7 @@ var RegisTervue_type_template_id_2f7ab9b8_render = function render() {
       "src": _vm.urlLogo,
       "alt": ""
     }
-  })]), _vm.modelRegisterForm === 'default' ? _c('div', [_c('h3', {
+  })]), _vm.modelRegisterFormResult === 'default' ? _c('div', [_c('h3', {
     staticClass: "content-center__title"
   }, [_vm._v(_vm._s(_vm.messages.login))]), _c('div', {
     staticClass: "form-group content-center__input"
@@ -63661,7 +63669,7 @@ var RegisTervue_type_template_id_2f7ab9b8_render = function render() {
     }
   }, [_c('span', {
     staticClass: "btn-login__text"
-  }, [_vm._v(" " + _vm._s(_vm.messages.submit.register) + " ")]), _vm.waiting == 'wait' ? _c('svgWaiting') : _vm._e()], 1)]), _c('hr')], 2) : _vm._e(), _vm.modelRegisterForm === 'generate_password' ? _c('div', [_c('h4', {
+  }, [_vm._v(" " + _vm._s(_vm.messages.submit.register) + " ")]), _vm.waiting == 'wait' ? _c('svgWaiting') : _vm._e()], 1)]), _c('hr')], 2) : _vm._e(), _vm.modelRegisterFormResult === 'generate_password' ? _c('div', [_c('h4', {
     staticClass: "title"
   }, [_vm._v("Creation automatique du compte")]), _c('p', {
     staticClass: "mb-4"
@@ -63743,7 +63751,7 @@ var RegisTervue_type_template_id_2f7ab9b8_render = function render() {
     }
   }, [_vm._v(" Retour ")])], 1);
 };
-var RegisTervue_type_template_id_2f7ab9b8_staticRenderFns = [];
+var RegisTervue_type_template_id_f644ecb2_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/formatFields/InputBootstrap.js
 
@@ -63904,7 +63912,7 @@ class formatField {
       required: true
     },
     modelRegisterForm: {
-      type: String,
+      type: [String, Boolean],
       required: true
     },
     showModalSuccess: {
@@ -63926,7 +63934,19 @@ class formatField {
     };
   },
   computed: {
-    ...vuex_esm_mapState(["form"])
+    ...vuex_esm_mapState(["form", "configs_login_rx_vuejs"]),
+    /**
+     * Resultat entre la config endur et celle en BD.
+     */
+    modelRegisterFormResult() {
+      if (this.modelRegisterForm) {
+        return this.modelRegisterForms;
+      } else if (this.configs_login_rx_vuejs && this.configs_login_rx_vuejs.generate_user) {
+        return "generate_password";
+      } else {
+        return "default";
+      }
+    }
   },
   mounted() {
     if (this.showPassword) {
@@ -64030,8 +64050,8 @@ class formatField {
 ;
 var RegisTer_component = (0,componentNormalizer/* default */.Z)(
   components_RegisTervue_type_script_lang_js_,
-  RegisTervue_type_template_id_2f7ab9b8_render,
-  RegisTervue_type_template_id_2f7ab9b8_staticRenderFns,
+  RegisTervue_type_template_id_f644ecb2_render,
+  RegisTervue_type_template_id_f644ecb2_staticRenderFns,
   false,
   null,
   null,
@@ -64051,6 +64071,7 @@ var RegisTer_component = (0,componentNormalizer/* default */.Z)(
 
 
 
+
 /* harmony default export */ var LoginRegistervue_type_script_lang_js_ = ({
   name: "LoginRegister",
   props: {
@@ -64065,8 +64086,8 @@ var RegisTer_component = (0,componentNormalizer/* default */.Z)(
       default: "default"
     },
     modelRegisterForm: {
-      type: String,
-      default: "default"
+      type: [String, Boolean],
+      default: false
     },
     showPassword: {
       type: Boolean,
@@ -64095,16 +64116,28 @@ var RegisTer_component = (0,componentNormalizer/* default */.Z)(
       formValidate: {}
     };
   },
+  computed: {
+    ...vuex_esm_mapState(["configs_login_rx_vuejs"]),
+    facebook_app_is_define() {
+      if (this.configs_login_rx_vuejs && this.configs_login_rx_vuejs.facebook_app_id) {
+        this.initFacebook();
+        return true;
+      } else return "";
+    }
+  },
   /**
    * --
    */
   mounted() {
-    facebook.appId = 889256191665205;
-    this.TryToLoginWithFacebook();
-    facebook.chargement();
     this.formValidate = this.$refs.formValidate;
+    this.getConfigs();
   },
   methods: {
+    initFacebook() {
+      facebook.appId = this.configs_login_rx_vuejs.facebook_app_id; //889256191665205;
+      this.TryToLoginWithFacebook();
+      facebook.chargement();
+    },
     selectStepe(step) {
       switch (step) {
         case "checkstatus":
@@ -64185,21 +64218,29 @@ var RegisTer_component = (0,componentNormalizer/* default */.Z)(
       });
     },
     /**
-     * helper to login user.
+     * Helper to login user.
      * ( This function is used by modules that create accounts and then need to login the user. )
      * @param {*} form
      */
     connexionUser(form) {
       return components_config.connexionUser(form, this.actionAfterLogin);
+    },
+    getConfigs() {
+      var url = "/login-rx-vuejs/get-configs";
+      App_utilities.post(url, this.form).then(resp => {
+        this.$store.state.configs_login_rx_vuejs = resp.data;
+      }).catch(e => {
+        console.log(e);
+      });
     }
   }
 });
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_LoginRegistervue_type_script_lang_js_ = (LoginRegistervue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=style&index=0&id=9203dc14&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=style&index=0&id=2e408796&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=style&index=0&id=9203dc14&prod&lang=scss&
+;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=style&index=0&id=2e408796&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginRegister.vue
 
@@ -64212,8 +64253,8 @@ var RegisTer_component = (0,componentNormalizer/* default */.Z)(
 
 var LoginRegister_component = (0,componentNormalizer/* default */.Z)(
   components_LoginRegistervue_type_script_lang_js_,
-  LoginRegistervue_type_template_id_9203dc14_render,
-  LoginRegistervue_type_template_id_9203dc14_staticRenderFns,
+  LoginRegistervue_type_template_id_2e408796_render,
+  LoginRegistervue_type_template_id_2e408796_staticRenderFns,
   false,
   null,
   null,
@@ -64520,7 +64561,12 @@ external_commonjs_vue_commonjs2_vue_root_Vue_default().use(vuex_esm);
       startConnection: false
     },
     // Contient les données provenant du serveur.
-    results: {}
+    results: {},
+    /**
+     * Configuration requise par le module login.
+     */
+    configs_login_rx_vuejs: {},
+    model_register_form: null
   },
   getters: {
     totalVotes(state) {
