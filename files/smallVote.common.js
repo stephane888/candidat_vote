@@ -61902,8 +61902,8 @@ window.fbAsyncInit = function () {
   fjs.parentNode.insertBefore(js, fjs);
 })(document, "script", "facebook-jssdk");
 /**/
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/CheckStatus.vue?vue&type=template&id=1a0a7d5c&
-var CheckStatusvue_type_template_id_1a0a7d5c_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/CheckStatus.vue?vue&type=template&id=0d56cd7c&
+var CheckStatusvue_type_template_id_0d56cd7c_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -61925,7 +61925,8 @@ var CheckStatusvue_type_template_id_1a0a7d5c_render = function render() {
     staticClass: "content-center__btn-column"
   }, [_c('logingoogle', {
     attrs: {
-      "idHtml": "default"
+      "idHtml": "default",
+      "action-after-login": _vm.actionAfterLogin
     }
   }), _c('div', {
     staticClass: "btn-login btn-login--facebook",
@@ -61994,10 +61995,10 @@ var CheckStatusvue_type_template_id_1a0a7d5c_render = function render() {
     staticClass: "btn-login__text"
   }, [_vm._v(" " + _vm._s(_vm.messages.submit.first) + " ")]), _vm.waiting === 'wait' ? _c('svgWaiting') : _vm._e()], 1)])]);
 };
-var CheckStatusvue_type_template_id_1a0a7d5c_staticRenderFns = [];
+var CheckStatusvue_type_template_id_0d56cd7c_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=template&id=6e485394&
-var LoginGooglevue_type_template_id_6e485394_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=template&id=2d6edafd&
+var LoginGooglevue_type_template_id_2d6edafd_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -62009,7 +62010,7 @@ var LoginGooglevue_type_template_id_6e485394_render = function render() {
     }
   });
 };
-var LoginGooglevue_type_template_id_6e485394_staticRenderFns = [];
+var LoginGooglevue_type_template_id_2d6edafd_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/rx/google.js
 //const gapi = window.gapi;
@@ -63167,7 +63168,7 @@ function loadScript(src) {
     },
     actionAfterLogin: {
       type: String,
-      default: "default"
+      required: true
     }
   },
   computed: {
@@ -63259,10 +63260,10 @@ function loadScript(src) {
 });
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_LoginGooglevue_type_script_lang_js_ = (LoginGooglevue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=6e485394&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=2d6edafd&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=6e485394&prod&lang=scss&
+;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue?vue&type=style&index=0&id=2d6edafd&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginGoogle.vue
 
@@ -63275,8 +63276,8 @@ function loadScript(src) {
 
 var LoginGoogle_component = (0,componentNormalizer/* default */.Z)(
   components_LoginGooglevue_type_script_lang_js_,
-  LoginGooglevue_type_template_id_6e485394_render,
-  LoginGooglevue_type_template_id_6e485394_staticRenderFns,
+  LoginGooglevue_type_template_id_2d6edafd_render,
+  LoginGooglevue_type_template_id_2d6edafd_staticRenderFns,
   false,
   null,
   null,
@@ -63304,6 +63305,10 @@ var LoginGoogle_component = (0,componentNormalizer/* default */.Z)(
     },
     formValidate: {
       type: Object,
+      required: true
+    },
+    actionAfterLogin: {
+      type: String,
       required: true
     }
   },
@@ -63352,8 +63357,8 @@ var LoginGoogle_component = (0,componentNormalizer/* default */.Z)(
 ;
 var CheckStatus_component = (0,componentNormalizer/* default */.Z)(
   components_CheckStatusvue_type_script_lang_js_,
-  CheckStatusvue_type_template_id_1a0a7d5c_render,
-  CheckStatusvue_type_template_id_1a0a7d5c_staticRenderFns,
+  CheckStatusvue_type_template_id_0d56cd7c_render,
+  CheckStatusvue_type_template_id_0d56cd7c_staticRenderFns,
   false,
   null,
   null,
