@@ -232,14 +232,14 @@ class CandidatEntity extends EditorialContentEntityBase implements CandidatEntit
     ])->setDisplayOptions('form', [
       'type' => 'string_textfield',
       'weight' => -4
-    ])->setDisplayConfigurable('form', TRUE)->setDisplayConfigurable('view', TRUE)->setRequired(TRUE);
+    ])->setDisplayConfigurable('form', TRUE)->setDisplayConfigurable('view', TRUE)->setRequired(TRUE)->setTranslatable(true);
     
     $fields['status']->setDescription(t('A boolean indicating whether the Candidat entity is published.'))->setDisplayOptions('form', [
       'type' => 'boolean_checkbox',
       'weight' => -3
     ]);
     $fields['image'] = BaseFieldDefinition::create('image')->setLabel(t('image'))->setDescription(t('Image of the Candidat entity entity'))->setDisplayConfigurable('form', TRUE)->setRevisionable(FALSE)->setDisplayConfigurable('view', TRUE)->setRequired(TRUE)->setSetting("file_extensions", "png gif jpg jpeg webp");
-    $fields['text_vote_btn'] = BaseFieldDefinition::create('string')->setLabel(t('vote_btn'))->setDescription(t('The string on vote brn of the Candidat entity entity.'))->setRevisionable(TRUE)->setDefaultValue("voter")->setDisplayConfigurable('form', TRUE)->setDisplayConfigurable('view', TRUE)->setRequired(TRUE);
+    $fields['text_vote_btn'] = BaseFieldDefinition::create('string')->setLabel(t('vote_btn'))->setDescription(t('The string on vote brn of the Candidat entity entity.'))->setRevisionable(TRUE)->setDefaultValue("voter")->setDisplayConfigurable('form', TRUE)->setDisplayConfigurable('view', TRUE)->setRequired(TRUE)->setTranslatable(true);
     
     $fields['created'] = BaseFieldDefinition::create('created')->setLabel(t('Created'))->setDescription(t('The time that the entity was created.'));
     

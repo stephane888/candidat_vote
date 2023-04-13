@@ -53070,8 +53070,8 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=template&id=0bf2af82&
-var VoteFormvue_type_template_id_0bf2af82_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=template&id=ecc9909e&
+var VoteFormvue_type_template_id_ecc9909e_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -53085,25 +53085,27 @@ var VoteFormvue_type_template_id_0bf2af82_render = function render() {
   }, [_c('b-col', {
     staticClass: "pl-00 mb-5 pb-5 mb-lg-0 pb-lg-0 block-vote",
     attrs: {
-      "md": "6"
+      "md": "12",
+      "lg": "6"
     }
   }, [_c('div', {
     staticClass: "section-desc"
   }, [_c('h4', {
     staticClass: "sd-title h3 font-weight-light"
-  }, [_vm._v(" Votez pour la meilleur entreprise nigériane au cameroun et tentez de gagnez de nombreux lots ")]), _c('div', {
+  }, [_vm._v(" Vote for the best Nigerian company in Cameroon and try to win many prizes. ")]), _c('div', {
     staticClass: "list-lots"
   }, [_c('lots-slider')], 1)])]), _c('b-col', {
     staticClass: "ml-auto",
     attrs: {
-      "md": "6"
+      "md": "12",
+      "lg": "6"
     }
   }, [_c('process-vote')], 1)], 1)], 1)]);
 };
-var VoteFormvue_type_template_id_0bf2af82_staticRenderFns = [];
+var VoteFormvue_type_template_id_ecc9909e_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/LotsSlider.vue?vue&type=template&id=54c95b28&
-var LotsSlidervue_type_template_id_54c95b28_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/LotsSlider.vue?vue&type=template&id=0965365b&
+var LotsSlidervue_type_template_id_0965365b_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -53144,7 +53146,7 @@ var LotsSlidervue_type_template_id_54c95b28_render = function render() {
     });
   }), 1)], 1);
 };
-var LotsSlidervue_type_template_id_54c95b28_staticRenderFns = [];
+var LotsSlidervue_type_template_id_0965365b_staticRenderFns = [];
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.unshift.js
 var es_array_unshift = __webpack_require__(541);
@@ -54306,10 +54308,10 @@ var index = {
 });
 ;// CONCATENATED MODULE: ./src/components/LotsSlider.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_LotsSlidervue_type_script_lang_js_ = (LotsSlidervue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/LotsSlider.vue?vue&type=style&index=0&id=54c95b28&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/LotsSlider.vue?vue&type=style&index=0&id=0965365b&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/LotsSlider.vue?vue&type=style&index=0&id=54c95b28&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/LotsSlider.vue?vue&type=style&index=0&id=0965365b&prod&lang=scss&
 
 // EXTERNAL MODULE: ./node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(713);
@@ -54324,8 +54326,8 @@ var componentNormalizer = __webpack_require__(713);
 
 var component = (0,componentNormalizer/* default */.Z)(
   components_LotsSlidervue_type_script_lang_js_,
-  LotsSlidervue_type_template_id_54c95b28_render,
-  LotsSlidervue_type_template_id_54c95b28_staticRenderFns,
+  LotsSlidervue_type_template_id_0965365b_render,
+  LotsSlidervue_type_template_id_0965365b_staticRenderFns,
   false,
   null,
   null,
@@ -54334,8 +54336,8 @@ var component = (0,componentNormalizer/* default */.Z)(
 )
 
 /* harmony default export */ var LotsSlider = (component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=template&id=50b075fb&
-var ProcessVotevue_type_template_id_50b075fb_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=template&id=681d4e38&
+var ProcessVotevue_type_template_id_681d4e38_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -54347,8 +54349,8 @@ var ProcessVotevue_type_template_id_50b075fb_render = function render() {
   }, [!_vm.isConnecting ? _c('div', {
     key: "vote-form"
   }, [_c('div', [_c('h3', {
-    staticClass: "h1 sd-title"
-  }, [_vm._v(" Quel est la meilleur entreprise nigériane au cameroun ? ")])]), _c('div', {
+    staticClass: "h2 sd-title"
+  }, [_vm._v(" What is the best Nigerian company in Cameroon ? ")])]), _c('div', {
     staticClass: "choice-content"
   }, [_c('form', [_c('div', {
     staticClass: "option-list",
@@ -54438,10 +54440,10 @@ var ProcessVotevue_type_template_id_50b075fb_render = function render() {
     staticClass: "align-middle spinner-centered text-light"
   })], 1)])], 1);
 };
-var ProcessVotevue_type_template_id_50b075fb_staticRenderFns = [];
+var ProcessVotevue_type_template_id_681d4e38_staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=template&id=2e408796&
-var LoginRegistervue_type_template_id_2e408796_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=template&id=77b94591&
+var LoginRegistervue_type_template_id_77b94591_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('ValidationObserver', {
@@ -54498,14 +54500,14 @@ var LoginRegistervue_type_template_id_2e408796_render = function render() {
   })], 1)])], 1), _c('div', {
     staticClass: "politik-secur mx-auto text-center"
   }, [_vm._t("condition_utilisation", function () {
-    return [_vm.configs_login_rx_vuejs.texts && _vm.configs_login_rx_vuejs.texts.condition_utilisation ? _c('div', {
+    return [_vm.configs_login_rx_vuejs && _vm.configs_login_rx_vuejs.texts && _vm.configs_login_rx_vuejs.texts.condition_utilisation ? _c('div', {
       domProps: {
         "innerHTML": _vm._s(_vm.configs_login_rx_vuejs.texts.condition_utilisation.value)
       }
     }) : _vm._e()];
   })], 2)]);
 };
-var LoginRegistervue_type_template_id_2e408796_staticRenderFns = [];
+var LoginRegistervue_type_template_id_77b94591_staticRenderFns = [];
 
 // EXTERNAL MODULE: ../drupal-vuejs/node_modules/core-js/modules/es.array.push.js
 var modules_es_array_push = __webpack_require__(5251);
@@ -61421,19 +61423,26 @@ const AjaxToastBootStrap = {
     }
     return new Promise((resolv, reject) => {
       this.$bvModal.msgBoxConfirm(body, confDefault).then(value => {
-        if (value) resolv(value);else reject(value);
+        console.log("value : ", value);
+        resolv(value);
       }).catch(err => {
         reject(err);
       });
     });
   },
-  modalConfirmDelete(body = "Confirmer la suppression, NB : cette action est irreverssible.", conf = {
-    title: "Attention",
-    okVariant: "danger",
-    okTitle: "Supprimer",
-    cancelTitle: "Annuler",
-    footerClass: "p-2"
-  }) {
+  modalConfirmDelete(body = "Confirmer la suppression, NB : cette action est irreverssible.", newConf = {}) {
+    const conf = {
+      title: "Attention",
+      okVariant: "danger",
+      okTitle: "Supprimer",
+      cancelTitle: "Annuler",
+      footerClass: "p-2",
+      headerBgVariant: "danger",
+      headerTextVariant: "light"
+    };
+    for (const i in newConf) {
+      conf[i] = newConf[i];
+    }
     return this.modalMessage(body, conf);
   },
   modalSuccess(body = "", conf = {}) {
@@ -64252,10 +64261,10 @@ var RegisTer_component = (0,componentNormalizer/* default */.Z)(
 });
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_LoginRegistervue_type_script_lang_js_ = (LoginRegistervue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=style&index=0&id=2e408796&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=style&index=0&id=77b94591&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=style&index=0&id=2e408796&prod&lang=scss&
+;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=style&index=0&id=77b94591&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ../drupal-vuejs/src/App/components/LoginRegister.vue
 
@@ -64268,8 +64277,8 @@ var RegisTer_component = (0,componentNormalizer/* default */.Z)(
 
 var LoginRegister_component = (0,componentNormalizer/* default */.Z)(
   components_LoginRegistervue_type_script_lang_js_,
-  LoginRegistervue_type_template_id_2e408796_render,
-  LoginRegistervue_type_template_id_2e408796_staticRenderFns,
+  LoginRegistervue_type_template_id_77b94591_render,
+  LoginRegistervue_type_template_id_77b94591_staticRenderFns,
   false,
   null,
   null,
@@ -64452,10 +64461,10 @@ var LoginRegister_component = (0,componentNormalizer/* default */.Z)(
 });
 ;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_ProcessVotevue_type_script_lang_js_ = (ProcessVotevue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=style&index=0&id=50b075fb&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=style&index=0&id=681d4e38&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=style&index=0&id=50b075fb&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=style&index=0&id=681d4e38&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./src/components/ProcessVote.vue
 
@@ -64468,8 +64477,8 @@ var LoginRegister_component = (0,componentNormalizer/* default */.Z)(
 
 var ProcessVote_component = (0,componentNormalizer/* default */.Z)(
   components_ProcessVotevue_type_script_lang_js_,
-  ProcessVotevue_type_template_id_50b075fb_render,
-  ProcessVotevue_type_template_id_50b075fb_staticRenderFns,
+  ProcessVotevue_type_template_id_681d4e38_render,
+  ProcessVotevue_type_template_id_681d4e38_staticRenderFns,
   false,
   null,
   null,
@@ -64496,10 +64505,10 @@ var ProcessVote_component = (0,componentNormalizer/* default */.Z)(
 });
 ;// CONCATENATED MODULE: ./src/components/VoteForm.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_VoteFormvue_type_script_lang_js_ = (VoteFormvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=style&index=0&id=0bf2af82&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=style&index=0&id=ecc9909e&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/VoteForm.vue?vue&type=style&index=0&id=0bf2af82&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/VoteForm.vue?vue&type=style&index=0&id=ecc9909e&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./src/components/VoteForm.vue
 
@@ -64512,8 +64521,8 @@ var ProcessVote_component = (0,componentNormalizer/* default */.Z)(
 
 var VoteForm_component = (0,componentNormalizer/* default */.Z)(
   components_VoteFormvue_type_script_lang_js_,
-  VoteFormvue_type_template_id_0bf2af82_render,
-  VoteFormvue_type_template_id_0bf2af82_staticRenderFns,
+  VoteFormvue_type_template_id_ecc9909e_render,
+  VoteFormvue_type_template_id_ecc9909e_staticRenderFns,
   false,
   null,
   null,

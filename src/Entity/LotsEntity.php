@@ -232,7 +232,7 @@ class LotsEntity extends EditorialContentEntityBase implements LotsEntityInterfa
     ])->setDisplayOptions('form', [
       'type' => 'string_textfield',
       'weight' => -4
-    ])->setDisplayConfigurable('form', TRUE)->setDisplayConfigurable('view', TRUE)->setRequired(TRUE);
+    ])->setDisplayConfigurable('form', TRUE)->setDisplayConfigurable('view', TRUE)->setRequired(TRUE)->setTranslatable(true);
     
     //
     $fields['lot_images'] = BaseFieldDefinition::create('image')->setLabel('Lot images')->setDisplayConfigurable('form', TRUE)->setDisplayConfigurable('view', TRUE)->setRequired(TRUE)->setCardinality(-1)->setSetting("file_extensions", "png gif jpg jpeg webp");
