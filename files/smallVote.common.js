@@ -53060,8 +53060,8 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=template&id=ecc9909e&
-var VoteFormvue_type_template_id_ecc9909e_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=template&id=8cfe866e&
+var VoteFormvue_type_template_id_8cfe866e_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -53082,7 +53082,7 @@ var VoteFormvue_type_template_id_ecc9909e_render = function render() {
     staticClass: "section-desc"
   }, [_c('h4', {
     staticClass: "sd-title h3 font-weight-light"
-  }, [_vm._v(" Vote for the best Nigerian company in Cameroon and try to win many prizes. ")]), _c('div', {
+  }, [_vm._v(" Vote for the best Nigerian company in Cameroon and win many prizes. ")]), _c('div', {
     staticClass: "list-lots"
   }, [_c('lots-slider')], 1)])]), _c('b-col', {
     staticClass: "ml-auto",
@@ -53092,7 +53092,7 @@ var VoteFormvue_type_template_id_ecc9909e_render = function render() {
     }
   }, [_c('process-vote')], 1)], 1)], 1)]);
 };
-var VoteFormvue_type_template_id_ecc9909e_staticRenderFns = [];
+var VoteFormvue_type_template_id_8cfe866e_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/LotsSlider.vue?vue&type=template&id=0965365b&
 var LotsSlidervue_type_template_id_0965365b_render = function render() {
@@ -54326,8 +54326,8 @@ var component = (0,componentNormalizer/* default */.Z)(
 )
 
 /* harmony default export */ var LotsSlider = (component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=template&id=681d4e38&
-var ProcessVotevue_type_template_id_681d4e38_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=template&id=7129fc7e&
+var ProcessVotevue_type_template_id_7129fc7e_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -54340,7 +54340,7 @@ var ProcessVotevue_type_template_id_681d4e38_render = function render() {
     key: "vote-form"
   }, [_c('div', [_c('h3', {
     staticClass: "h2 sd-title"
-  }, [_vm._v(" What is the best Nigerian company in Cameroon ? ")])]), _c('div', {
+  }, [_vm._v(" Vote for the best Nigerian compagny in Cameroon. ")])]), _c('div', {
     staticClass: "choice-content"
   }, [_c('form', [_c('div', {
     staticClass: "option-list",
@@ -54384,7 +54384,7 @@ var ProcessVotevue_type_template_id_681d4e38_render = function render() {
           return _vm.VoteNow($event, choix);
         }
       }
-    }, [_vm._v(" Voter ")]), _c('div', {
+    }, [_vm._v(" Vote here ")]), _c('div', {
       staticClass: "result-effect",
       class: {
         'result-effect--on': !_vm.canDoAction
@@ -54430,7 +54430,7 @@ var ProcessVotevue_type_template_id_681d4e38_render = function render() {
     staticClass: "align-middle spinner-centered text-light"
   })], 1)])], 1);
 };
-var ProcessVotevue_type_template_id_681d4e38_staticRenderFns = [];
+var ProcessVotevue_type_template_id_7129fc7e_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=template&id=77b94591&
 var LoginRegistervue_type_template_id_77b94591_render = function render() {
@@ -54757,6 +54757,13 @@ const basicRequest = {
   getBaseUrl() {
     if (this.baseUrl) return this.isLocalDev && this.TestDomain ? this.TestDomain.trim("/") : this.baseUrl;else return this.isLocalDev && this.TestDomain ? this.TestDomain.trim("/") : window.location.protocol + "//" + window.location.host;
   },
+  /**
+   * Permet de recuperer les messages , en priorité celui definie dans headers.customstatustext.
+   *
+   * @param {*} er
+   * @param {*} type ( vrai pour recuperer les messages en cas de success )
+   * @returns
+   */
   getStatusText(er, type = false) {
     if (er) {
       if (type) {
@@ -64451,10 +64458,10 @@ var LoginRegister_component = (0,componentNormalizer/* default */.Z)(
 });
 ;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_ProcessVotevue_type_script_lang_js_ = (ProcessVotevue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=style&index=0&id=681d4e38&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=style&index=0&id=7129fc7e&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=style&index=0&id=681d4e38&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=style&index=0&id=7129fc7e&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./src/components/ProcessVote.vue
 
@@ -64467,8 +64474,8 @@ var LoginRegister_component = (0,componentNormalizer/* default */.Z)(
 
 var ProcessVote_component = (0,componentNormalizer/* default */.Z)(
   components_ProcessVotevue_type_script_lang_js_,
-  ProcessVotevue_type_template_id_681d4e38_render,
-  ProcessVotevue_type_template_id_681d4e38_staticRenderFns,
+  ProcessVotevue_type_template_id_7129fc7e_render,
+  ProcessVotevue_type_template_id_7129fc7e_staticRenderFns,
   false,
   null,
   null,
@@ -64495,10 +64502,10 @@ var ProcessVote_component = (0,componentNormalizer/* default */.Z)(
 });
 ;// CONCATENATED MODULE: ./src/components/VoteForm.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_VoteFormvue_type_script_lang_js_ = (VoteFormvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=style&index=0&id=ecc9909e&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/VoteForm.vue?vue&type=style&index=0&id=8cfe866e&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/VoteForm.vue?vue&type=style&index=0&id=ecc9909e&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/VoteForm.vue?vue&type=style&index=0&id=8cfe866e&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./src/components/VoteForm.vue
 
@@ -64511,8 +64518,8 @@ var ProcessVote_component = (0,componentNormalizer/* default */.Z)(
 
 var VoteForm_component = (0,componentNormalizer/* default */.Z)(
   components_VoteFormvue_type_script_lang_js_,
-  VoteFormvue_type_template_id_ecc9909e_render,
-  VoteFormvue_type_template_id_ecc9909e_staticRenderFns,
+  VoteFormvue_type_template_id_8cfe866e_render,
+  VoteFormvue_type_template_id_8cfe866e_staticRenderFns,
   false,
   null,
   null,
