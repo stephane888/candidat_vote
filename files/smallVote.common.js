@@ -54326,8 +54326,8 @@ var component = (0,componentNormalizer/* default */.Z)(
 )
 
 /* harmony default export */ var LotsSlider = (component.exports);
-;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=template&id=7129fc7e&
-var ProcessVotevue_type_template_id_7129fc7e_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=template&id=7db86cce&
+var ProcessVotevue_type_template_id_7db86cce_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -54405,7 +54405,7 @@ var ProcessVotevue_type_template_id_7129fc7e_render = function render() {
     staticClass: "votes text-light"
   }, [_c('h4', [_vm._v(_vm._s(_vm.totalVotes) + " votes")]), _vm.canDoAction ? _c('p', {
     staticClass: "font-italic font-weight-light"
-  }, [_vm._v(" Voter maintenant afin de determiner la repartition des voies. ")]) : _vm._e()]), _c('hr', {
+  }, [_vm._v(" Vote now to determine the allocation of lanes. ")]) : _vm._e()]), _c('hr', {
     staticClass: "p-2"
   })])])]) : _vm._e(), _vm.isConnecting ? _c('div', {
     key: "login-form",
@@ -54430,7 +54430,7 @@ var ProcessVotevue_type_template_id_7129fc7e_render = function render() {
     staticClass: "align-middle spinner-centered text-light"
   })], 1)])], 1);
 };
-var ProcessVotevue_type_template_id_7129fc7e_staticRenderFns = [];
+var ProcessVotevue_type_template_id_7db86cce_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!../drupal-vuejs/src/App/components/LoginRegister.vue?vue&type=template&id=77b94591&
 var LoginRegistervue_type_template_id_77b94591_render = function render() {
@@ -64458,10 +64458,10 @@ var LoginRegister_component = (0,componentNormalizer/* default */.Z)(
 });
 ;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_ProcessVotevue_type_script_lang_js_ = (ProcessVotevue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=style&index=0&id=7129fc7e&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ProcessVote.vue?vue&type=style&index=0&id=7db86cce&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=style&index=0&id=7129fc7e&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/ProcessVote.vue?vue&type=style&index=0&id=7db86cce&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./src/components/ProcessVote.vue
 
@@ -64474,8 +64474,8 @@ var LoginRegister_component = (0,componentNormalizer/* default */.Z)(
 
 var ProcessVote_component = (0,componentNormalizer/* default */.Z)(
   components_ProcessVotevue_type_script_lang_js_,
-  ProcessVotevue_type_template_id_7129fc7e_render,
-  ProcessVotevue_type_template_id_7129fc7e_staticRenderFns,
+  ProcessVotevue_type_template_id_7db86cce_render,
+  ProcessVotevue_type_template_id_7db86cce_staticRenderFns,
   false,
   null,
   null,
@@ -64565,7 +64565,7 @@ var App_component = (0,componentNormalizer/* default */.Z)(
 external_commonjs_vue_commonjs2_vue_root_Vue_default().use(vuex_esm);
 /* harmony default export */ var store = (new vuex_esm.Store({
   state: {
-    //to login
+    // to login
     form: {
       name: [{
         value: ""
