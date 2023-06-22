@@ -186,19 +186,19 @@ class ManageCandidatApp extends ControllerBase {
       // le client souhaite faire une tricherie pour le marketing.
       switch ($entity->id()) {
         case 1:
-          $vote_count += 300;
+          $vote_count += 796;
           break;
         case 2:
-          $vote_count += 5;
+          $vote_count += 91;
           break;
         case 3:
-          $vote_count += 27;
+          $vote_count += 165;
           break;
         case 4:
-          $vote_count += 112;
+          $vote_count += 458;
           break;
         case 5:
-          $vote_count += 8;
+          $vote_count += 124;
           break;
       }
       $candidats[] = [
